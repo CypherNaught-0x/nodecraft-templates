@@ -1,0 +1,18 @@
+[package]
+name = "nodecraft-template-data"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.88"
+license = "MIT OR Apache-2.0"
+description = "Original offline workflow templates for NodeCraft"
+repository = "https://github.com/CypherNaught-0x/nodecraft-templates"
+publish = false
+
+[lib]
+path = "src/lib.rs"
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[dev-dependencies]
+serde_json = "1"

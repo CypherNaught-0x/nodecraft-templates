@@ -1,4 +1,5 @@
 {
+  "schema_version": 1,
   "templates": [
     {
       "blake3": "f7683d0272c11f8be693f16eeaab6a746497eeb78468631818ddc0b7b86832d2",
@@ -7,7 +8,7 @@
       "features": [
         "text-generation"
       ],
-      "file": "generate-text.ncraft",
+      "file": "templates/generate-text/1/f7683d0272c11f8be693f16eeaab6a746497eeb78468631818ddc0b7b86832d2.ncraft",
       "id": "generate-text",
       "title": "Generate text",
       "version": 1
@@ -19,7 +20,7 @@
       "features": [
         "image-generation"
       ],
-      "file": "generate-image.ncraft",
+      "file": "templates/generate-image/1/f533269f6a24b61bd2c4e114d71f0cad2e2d95a084d8edb2791f1cfda3604f4b.ncraft",
       "id": "generate-image",
       "title": "Generate an image",
       "version": 1
@@ -31,7 +32,7 @@
       "features": [
         "video-generation"
       ],
-      "file": "generate-video.ncraft",
+      "file": "templates/generate-video/1/ef2adeece459e506d5d2df17d3ff391dd3a930289b93a49afc9b5af2cc564b79.ncraft",
       "id": "generate-video",
       "title": "Generate a video",
       "version": 1
@@ -43,7 +44,7 @@
       "features": [
         "audio-generation"
       ],
-      "file": "generate-audio.ncraft",
+      "file": "templates/generate-audio/1/d80ca9f52a2040d6c526e5389b9038aab2c8bb1ac44d52ec21366d302ead3b42.ncraft",
       "id": "generate-audio",
       "title": "Generate speech",
       "version": 1
@@ -55,7 +56,7 @@
       "features": [
         "mesh-generation"
       ],
-      "file": "generate-3d.ncraft",
+      "file": "templates/generate-3d/1/6ed086f13d257cd21f6fbde73673d90d749ec7ca7a688d01a95d690323027c40.ncraft",
       "id": "generate-3d",
       "title": "Generate a 3D model",
       "version": 1
@@ -67,7 +68,7 @@
       "features": [
         "cloud-local-switch"
       ],
-      "file": "cloud-local.ncraft",
+      "file": "templates/cloud-local/1/44e4f1664dc887a5c9860eb90208c2ae153d3d735963b310534edf2796f5bc21.ncraft",
       "id": "cloud-local",
       "title": "Switch cloud and local",
       "version": 1
@@ -81,7 +82,7 @@
         "pdf-text",
         "pdf-images"
       ],
-      "file": "documents.ncraft",
+      "file": "templates/documents/1/1defa20582b63969ab48e5878af7dbd94f23d01db84cca31c19aea9e8a0b2f96.ncraft",
       "id": "documents",
       "title": "Read a PDF",
       "version": 1
@@ -93,7 +94,7 @@
       "features": [
         "document-aware-generation"
       ],
-      "file": "document-prompt.ncraft",
+      "file": "templates/document-prompt/1/22dcdd598cd560f9fcfd5ab9687733026f92e1af55b559412933d35b058fbf65.ncraft",
       "id": "document-prompt",
       "title": "Ask about a document",
       "version": 1
@@ -106,7 +107,7 @@
         "combine",
         "layer-editor"
       ],
-      "file": "combine.ncraft",
+      "file": "templates/combine/1/c7f354b9f6ca9bae5a212fdca8e228fc7f02c2a68d6081b099b038de0807ded8.ncraft",
       "id": "combine",
       "title": "Combine images",
       "version": 1
@@ -118,7 +119,7 @@
       "features": [
         "branch"
       ],
-      "file": "branch.ncraft",
+      "file": "templates/branch/1/7da6241698fb8ba713b6e21461f1f07d364a451271cf9856f72be85a0a7e3989.ncraft",
       "id": "branch",
       "title": "Branch an image",
       "version": 1
@@ -131,7 +132,7 @@
         "prompt-helper",
         "image-guided-prompt"
       ],
-      "file": "prompt-helper.ncraft",
+      "file": "templates/prompt-helper/1/77a557b32f8fd4c35e80916b2df527543e1312f2ecb1237c4c16744d50f73c62.ncraft",
       "id": "prompt-helper",
       "title": "Write an image-guided prompt",
       "version": 1
@@ -143,7 +144,7 @@
       "features": [
         "csv-batch"
       ],
-      "file": "csv-batch.ncraft",
+      "file": "templates/csv-batch/1/589c67cc30d391ebbbf53b03bc99d5bfbc414fe8b17fd23d014a4f2451ea00b4.ncraft",
       "id": "csv-batch",
       "title": "Batch from CSV",
       "version": 1
@@ -155,7 +156,7 @@
       "features": [
         "prompt-list"
       ],
-      "file": "prompt-list.ncraft",
+      "file": "templates/prompt-list/1/1af9549e26e5c46cd7b58e6e52068db0802873e7d2f9dfd9c76b00395ccb6ca2.ncraft",
       "id": "prompt-list",
       "title": "Batch a prompt list",
       "version": 1
@@ -167,7 +168,7 @@
       "features": [
         "batch-cross"
       ],
-      "file": "batch-cross.ncraft",
+      "file": "templates/batch-cross/1/14cd3e4b175b77b226485819d1a636fa7c0a1df61cb045be0b3f638ce5682f66.ncraft",
       "id": "batch-cross",
       "title": "Batch cross",
       "version": 1
@@ -179,7 +180,7 @@
       "features": [
         "batch-zip"
       ],
-      "file": "batch-zip.ncraft",
+      "file": "templates/batch-zip/1/36f3f9eaa06abec36e3173e18ba911154cbb57c68218b6217cf46fdaaf4a3123.ncraft",
       "id": "batch-zip",
       "title": "Batch zip",
       "version": 1
@@ -193,7 +194,7 @@
         "published-technique",
         "app-form"
       ],
-      "file": "technique.ncraft",
+      "file": "templates/technique/1/b3e3277ef966bf5e094e583d3713706bb8ca3f709563eec3d040613c1a05a9b5.ncraft",
       "id": "technique",
       "title": "Use a Technique",
       "version": 1
@@ -207,7 +208,7 @@
         "published-technique",
         "app-form"
       ],
-      "file": "published-technique.ncraft",
+      "file": "templates/published-technique/1/3159a9fed09659f16d6436ad2b954b841efdc6f334e4435f59aec6fc7d526601.ncraft",
       "id": "published-technique",
       "title": "Publish and reuse",
       "version": 1
@@ -221,7 +222,7 @@
         "published-technique",
         "app-form"
       ],
-      "file": "app-form.ncraft",
+      "file": "templates/app-form/1/4402519b3d7602f38e771cca591395cc867a8215ba78a32d002ee18269cc10de.ncraft",
       "id": "app-form",
       "title": "Use an app form",
       "version": 1
@@ -233,7 +234,7 @@
       "features": [
         "router"
       ],
-      "file": "router.ncraft",
+      "file": "templates/router/1/4bf32452ff9b44ecf75e4fb43d031efa4ecbe345ae1bb4500450818f327fb74b.ncraft",
       "id": "router",
       "title": "Route a shared prompt",
       "version": 1
@@ -245,7 +246,7 @@
       "features": [
         "mapped-comfy-workflow"
       ],
-      "file": "comfy-core.ncraft",
+      "file": "templates/comfy-core/1/438d9e5974f5d8949a18265781930af84a96023acf4bbefb016fb9c68a4bcff2.ncraft",
       "id": "comfy-core",
       "title": "Mapped core ComfyUI workflow",
       "version": 1
@@ -257,7 +258,7 @@
       "features": [
         "image.blur"
       ],
-      "file": "action-image-blur.ncraft",
+      "file": "templates/action-image-blur/1/a1970a5b94ae79978217d3e6de38203848e57587874fd7f47b0c1f48ab2f9232.ncraft",
       "id": "action-image-blur",
       "title": "Blur",
       "version": 1
@@ -269,7 +270,7 @@
       "features": [
         "image.grade"
       ],
-      "file": "action-image-grade.ncraft",
+      "file": "templates/action-image-grade/1/d6742275207b8ba007d7c0203e34d75d2720ffdd13553778de83ad8dd39b2246.ncraft",
       "id": "action-image-grade",
       "title": "Color grade",
       "version": 1
@@ -281,7 +282,7 @@
       "features": [
         "image.filter"
       ],
-      "file": "action-image-filter.ncraft",
+      "file": "templates/action-image-filter/1/c5059c3d170e116181031070e89561f3a97f3c002087771fd3298824191c5d2a.ncraft",
       "id": "action-image-filter",
       "title": "Filter",
       "version": 1
@@ -293,7 +294,7 @@
       "features": [
         "image.tint"
       ],
-      "file": "action-image-tint.ncraft",
+      "file": "templates/action-image-tint/1/cb96c50150053596c1634f32770883376434a27c5abdcf0b9371752319eebf4f.ncraft",
       "id": "action-image-tint",
       "title": "Tint",
       "version": 1
@@ -305,7 +306,7 @@
       "features": [
         "image.flip"
       ],
-      "file": "action-image-flip.ncraft",
+      "file": "templates/action-image-flip/1/fe55adb653639c1abbf0584b7c214ae945ae73e446e4eacefa53b852feedac46.ncraft",
       "id": "action-image-flip",
       "title": "Flip",
       "version": 1
@@ -317,7 +318,7 @@
       "features": [
         "image.rotate"
       ],
-      "file": "action-image-rotate.ncraft",
+      "file": "templates/action-image-rotate/1/193b978eb7d33fd27079cde0f5bec62074a1eb8253be9f9aa01c012a58801b08.ncraft",
       "id": "action-image-rotate",
       "title": "Rotate",
       "version": 1
@@ -329,7 +330,7 @@
       "features": [
         "image.crop"
       ],
-      "file": "action-image-crop.ncraft",
+      "file": "templates/action-image-crop/1/a2dd084ce0a677d05b242d66e138f88cf8e2b5111de1b8be63f78dbfe29f4a9c.ncraft",
       "id": "action-image-crop",
       "title": "Crop",
       "version": 1
@@ -341,7 +342,7 @@
       "features": [
         "image.key"
       ],
-      "file": "action-image-key.ncraft",
+      "file": "templates/action-image-key/1/1d6e98f1adb424d2c7c7a127d9882f1a9fcd4048a8e31322384d27cf77f30482.ncraft",
       "id": "action-image-key",
       "title": "Remove color",
       "version": 1
@@ -353,7 +354,7 @@
       "features": [
         "image.replace_color"
       ],
-      "file": "action-image-replace_color.ncraft",
+      "file": "templates/action-image-replace_color/1/f388f08819064097db85409f9f4bae731a5ea030af7ac6967f2563c8ebd480eb.ncraft",
       "id": "action-image-replace_color",
       "title": "Replace color",
       "version": 1
@@ -365,7 +366,7 @@
       "features": [
         "image.aspect"
       ],
-      "file": "action-image-aspect.ncraft",
+      "file": "templates/action-image-aspect/1/47ea64558345b6dc824abe8b5f1290a4b54daaf71290b1278452b213cfd53b68.ncraft",
       "id": "action-image-aspect",
       "title": "Aspect ratio",
       "version": 1
@@ -377,7 +378,7 @@
       "features": [
         "image.overlay"
       ],
-      "file": "action-image-overlay.ncraft",
+      "file": "templates/action-image-overlay/1/ab69e3d10df2a6ea39fa90eca018912e0b9c7d43efd0753c593959d8157c9bec.ncraft",
       "id": "action-image-overlay",
       "title": "Overlay",
       "version": 1
@@ -389,7 +390,7 @@
       "features": [
         "image.duplicate"
       ],
-      "file": "action-image-duplicate.ncraft",
+      "file": "templates/action-image-duplicate/1/f7d23c037540966341505de7cd4df6ff72d81971794dec2d97e0d978c87d422d.ncraft",
       "id": "action-image-duplicate",
       "title": "Duplicate",
       "version": 1
@@ -401,7 +402,7 @@
       "features": [
         "image.resize"
       ],
-      "file": "action-image-resize.ncraft",
+      "file": "templates/action-image-resize/1/2b2ece1a25e5dac991563e46612706e7d01b019665e7ff22904f83c9afaf9538.ncraft",
       "id": "action-image-resize",
       "title": "Resize",
       "version": 1
@@ -413,7 +414,7 @@
       "features": [
         "image.expand"
       ],
-      "file": "action-image-expand.ncraft",
+      "file": "templates/action-image-expand/1/8483390ab532b77d9a65a3960b7cd521c96f0e88477cf877f465ecfc62e5dd0c.ncraft",
       "id": "action-image-expand",
       "title": "Expand canvas",
       "version": 1
@@ -425,7 +426,7 @@
       "features": [
         "text.split"
       ],
-      "file": "action-text-split.ncraft",
+      "file": "templates/action-text-split/1/a9492f9610dc4c6e69c1ca82d255e1d1e5d949299227c6c370f5f7e4f6564434.ncraft",
       "id": "action-text-split",
       "title": "Split text",
       "version": 1
@@ -437,7 +438,7 @@
       "features": [
         "text.replace"
       ],
-      "file": "action-text-replace.ncraft",
+      "file": "templates/action-text-replace/1/9fcf78417b2b00647931d3b9efa5f7c0e52256416e339a97c46ec2f527cac1bc.ncraft",
       "id": "action-text-replace",
       "title": "Replace text",
       "version": 1
@@ -449,7 +450,7 @@
       "features": [
         "text.template"
       ],
-      "file": "action-text-template.ncraft",
+      "file": "templates/action-text-template/1/2d5bd96270f2a342e4b67223abe8273f9f04348431458196fb7367fda7752314.ncraft",
       "id": "action-text-template",
       "title": "Template",
       "version": 1
@@ -461,7 +462,7 @@
       "features": [
         "text.concat"
       ],
-      "file": "action-text-concat.ncraft",
+      "file": "templates/action-text-concat/1/3795175c87322c0079437521d9bfb8231ca2e237f2c27ba4db9a8ea426b45879.ncraft",
       "id": "action-text-concat",
       "title": "Join text",
       "version": 1
@@ -475,7 +476,7 @@
         "text-layers",
         "shape-layers"
       ],
-      "file": "layout.ncraft",
+      "file": "templates/layout/1/3ba40f0c43e73605e3918953bbc05852b4b45a8cc90abbc1ca4adc99bd4a624d.ncraft",
       "id": "layout",
       "title": "Design a layout",
       "version": 1
@@ -488,7 +489,7 @@
         "mesh-source",
         "mesh-convert"
       ],
-      "file": "mesh-convert.ncraft",
+      "file": "templates/mesh-convert/1/0b20c5c2539150a2d98ec2f5b405d5610a07afd6bb93150b69a91f4dd89e31a5.ncraft",
       "id": "mesh-convert",
       "title": "Convert a 3D model",
       "version": 1
@@ -500,7 +501,7 @@
       "features": [
         "element-reference"
       ],
-      "file": "elements.ncraft",
+      "file": "templates/elements/1/f0f1b31c67ab7cbf306a09022a9327d698a4c25abefd78de01b7ee5554753ff3.ncraft",
       "id": "elements",
       "title": "Reuse a subject",
       "version": 1
@@ -514,7 +515,7 @@
         "deck-present",
         "deck-export"
       ],
-      "file": "storyboard.ncraft",
+      "file": "templates/storyboard/1/b518c83f18442871b538f79c31dae735976e29f06900c066c7e97eaaad268616.ncraft",
       "id": "storyboard",
       "title": "Present a storyboard",
       "version": 1
@@ -528,7 +529,7 @@
         "deck-present",
         "deck-export"
       ],
-      "file": "generate-document.ncraft",
+      "file": "templates/generate-document/1/f32ecaec273d8b2cef58ea9fe729f65e68ede9cd4b0f02ecac3cfeb0bed14e25.ncraft",
       "id": "generate-document",
       "title": "Generate a PDF document",
       "version": 1
@@ -540,7 +541,7 @@
       "features": [
         "image.mask"
       ],
-      "file": "action-image-mask.ncraft",
+      "file": "templates/action-image-mask/1/d5ec0b79ad4ff6f68f7ee428cea0dc48861e91013f52efddc36796f9e2d0fe77.ncraft",
       "id": "action-image-mask",
       "title": "Paint a mask",
       "version": 1
@@ -552,7 +553,7 @@
       "features": [
         "image.shader"
       ],
-      "file": "action-image-shader.ncraft",
+      "file": "templates/action-image-shader/1/6893ab7001ffcb46a37a3ed69f5a1d1d9a686adae49f2e344b78470af4216d08.ncraft",
       "id": "action-image-shader",
       "title": "Use a custom shader",
       "version": 1
@@ -564,7 +565,7 @@
       "features": [
         "mesh.photo"
       ],
-      "file": "action-mesh-photo.ncraft",
+      "file": "templates/action-mesh-photo/1/47d7c463f94d539e3da86c79719ce48c4bd01c6fd9f3e2eba2ec3184c6741fac.ncraft",
       "id": "action-mesh-photo",
       "title": "mesh.photo",
       "version": 1
@@ -576,7 +577,7 @@
       "features": [
         "mesh.views"
       ],
-      "file": "action-mesh-views.ncraft",
+      "file": "templates/action-mesh-views/1/f0fa6128ad9610a40e2da923b5c4d188e94d8e1ac551f036ad8847e234408a85.ncraft",
       "id": "action-mesh-views",
       "title": "mesh.views",
       "version": 1
@@ -588,7 +589,7 @@
       "features": [
         "mesh.turntable"
       ],
-      "file": "action-mesh-turntable.ncraft",
+      "file": "templates/action-mesh-turntable/1/6667e2c35d7e23a814932b1f654683a27d4755a422f2ee8a1edf99bcc565f18e.ncraft",
       "id": "action-mesh-turntable",
       "title": "mesh.turntable",
       "version": 1
@@ -600,7 +601,7 @@
       "features": [
         "video.trim"
       ],
-      "file": "action-video-trim.ncraft",
+      "file": "templates/action-video-trim/1/4e10a1677ebdbc98b1fe6b5aba5a6f45d1f75d09fb15efdd32a03d040a1c9fbe.ncraft",
       "id": "action-video-trim",
       "title": "Trim video",
       "version": 1
@@ -612,7 +613,7 @@
       "features": [
         "video.speed"
       ],
-      "file": "action-video-speed.ncraft",
+      "file": "templates/action-video-speed/1/e46c108e313f5f26f9a2753dbfa5cb60f4e97665020916980d6255797cc55ae1.ncraft",
       "id": "action-video-speed",
       "title": "Change speed",
       "version": 1
@@ -624,7 +625,7 @@
       "features": [
         "video.stitch"
       ],
-      "file": "action-video-stitch.ncraft",
+      "file": "templates/action-video-stitch/1/1c790ab73fd5382fc552032faf10b5950ea376d1d15608e5c0fe0e3280db9287.ncraft",
       "id": "action-video-stitch",
       "title": "Stitch videos",
       "version": 1
@@ -636,7 +637,7 @@
       "features": [
         "video.replace_audio"
       ],
-      "file": "action-video-replace_audio.ncraft",
+      "file": "templates/action-video-replace_audio/1/b801d6214711995bf1ec4942969cde492ab4d04ec1996a4d78d9f877796bb663.ncraft",
       "id": "action-video-replace_audio",
       "title": "Replace sound",
       "version": 1
@@ -648,7 +649,7 @@
       "features": [
         "video.frames"
       ],
-      "file": "action-video-frames.ncraft",
+      "file": "templates/action-video-frames/1/61dffca1f2ad1e1bdcc58646d59c64d2b600f950be2db1871bb46ccc70ed1044.ncraft",
       "id": "action-video-frames",
       "title": "Extract frames",
       "version": 1
@@ -660,7 +661,7 @@
       "features": [
         "video.contact_sheet"
       ],
-      "file": "action-video-contact_sheet.ncraft",
+      "file": "templates/action-video-contact_sheet/1/a5f7094532a17c36c71b0777163451fa3327e3c84a615380ee52accc86f6a5f5.ncraft",
       "id": "action-video-contact_sheet",
       "title": "Contact sheet",
       "version": 1
@@ -672,7 +673,7 @@
       "features": [
         "video.long_exposure"
       ],
-      "file": "action-video-long_exposure.ncraft",
+      "file": "templates/action-video-long_exposure/1/aab7c1b58df0f10cf99ecce17d89d20e08ac223eabb721e1f0166baf5e75df60.ncraft",
       "id": "action-video-long_exposure",
       "title": "Long exposure",
       "version": 1
@@ -684,7 +685,7 @@
       "features": [
         "video.reverse"
       ],
-      "file": "action-video-reverse.ncraft",
+      "file": "templates/action-video-reverse/1/8ba5d739a04790308f097dfa7de3e9f3db76a8d29e3283bc291add10b0dd0b16.ncraft",
       "id": "action-video-reverse",
       "title": "Reverse video",
       "version": 1
@@ -696,7 +697,7 @@
       "features": [
         "video.ken_burns"
       ],
-      "file": "action-video-ken_burns.ncraft",
+      "file": "templates/action-video-ken_burns/1/d78f7201e733fa8dcefdf25e89384a1acbd6ed7d61254115829fb41825810547.ncraft",
       "id": "action-video-ken_burns",
       "title": "Pan and zoom",
       "version": 1
@@ -708,7 +709,7 @@
       "features": [
         "video.grade"
       ],
-      "file": "action-video-grade.ncraft",
+      "file": "templates/action-video-grade/1/10bb75acfb71edca7312b657eacaaf9e936a195962e4455da1b935c3052d0e53.ncraft",
       "id": "action-video-grade",
       "title": "Grade video",
       "version": 1
@@ -720,7 +721,7 @@
       "features": [
         "video.filter"
       ],
-      "file": "action-video-filter.ncraft",
+      "file": "templates/action-video-filter/1/58b31f3af5f53cb850e2eae69ee3d3ac1a829ed9c744c4f4d30ddbd29e3a2b6c.ncraft",
       "id": "action-video-filter",
       "title": "Video effect",
       "version": 1
@@ -732,7 +733,7 @@
       "features": [
         "video.key"
       ],
-      "file": "action-video-key.ncraft",
+      "file": "templates/action-video-key/1/80c37421d7cc900a8e5ab877570b4d6816104ee12a1eb8afbe4c988b39c46327.ncraft",
       "id": "action-video-key",
       "title": "Key out a colour",
       "version": 1
@@ -744,7 +745,7 @@
       "features": [
         "video.watermark"
       ],
-      "file": "action-video-watermark.ncraft",
+      "file": "templates/action-video-watermark/1/efbe926cb56e1ab80d7c15472c41dd73efffbed112159cae220b0c19b042fecd.ncraft",
       "id": "action-video-watermark",
       "title": "Watermark video",
       "version": 1
@@ -756,7 +757,7 @@
       "features": [
         "video.duplicate"
       ],
-      "file": "action-video-duplicate.ncraft",
+      "file": "templates/action-video-duplicate/1/54c572bd43155628b9449dad7f0b14e62fe91465d36a35494a73aaecd8dd96b6.ncraft",
       "id": "action-video-duplicate",
       "title": "Duplicate video",
       "version": 1
@@ -768,7 +769,7 @@
       "features": [
         "video.split"
       ],
-      "file": "action-video-split.ncraft",
+      "file": "templates/action-video-split/1/5efeeae55f19ca0ba60f6d0c2fb1dd70aa4e4e15c0187fef0bc2f57f79a61796.ncraft",
       "id": "action-video-split",
       "title": "Split video",
       "version": 1
@@ -780,7 +781,7 @@
       "features": [
         "video.extract_audio"
       ],
-      "file": "action-video-extract_audio.ncraft",
+      "file": "templates/action-video-extract_audio/1/0c19fb1fa1f81f0f1f8172de2ffc159c39b20e658369b1ae8e0c0f8f29f99223.ncraft",
       "id": "action-video-extract_audio",
       "title": "Extract sound",
       "version": 1
@@ -792,7 +793,7 @@
       "features": [
         "timeline"
       ],
-      "file": "timeline.ncraft",
+      "file": "templates/timeline/1/3811d2eb5b69703b982172828bd788ce5f4551c344292885a31204eb383146c6.ncraft",
       "id": "timeline",
       "title": "Arrange a Timeline",
       "version": 1
@@ -805,7 +806,7 @@
         "style-training",
         "style-application"
       ],
-      "file": "train-style.ncraft",
+      "file": "templates/train-style/1/ac6ee3b57c19815d3d25fa2f807207ec3178de4de3192b0a03aebeecbbe316a8.ncraft",
       "id": "train-style",
       "title": "Train a reusable style",
       "version": 1
@@ -819,7 +820,7 @@
         "folder-filter",
         "folder-range"
       ],
-      "file": "folder.ncraft",
+      "file": "templates/folder/1/e613ee1ccd3ee7939181aa1456c98ef526bceadf290fc6d729aa69595da68eb0.ncraft",
       "id": "folder",
       "title": "Loop over a folder",
       "version": 1
@@ -831,7 +832,7 @@
       "features": [
         "edit-image"
       ],
-      "file": "edit-image.ncraft",
+      "file": "templates/edit-image/1/0feb33d77c06bd1951a445a2e3b9aee6f7b4790880d20a7794a63323da50b463.ncraft",
       "id": "edit-image",
       "title": "Edit an image",
       "version": 1
@@ -843,7 +844,7 @@
       "features": [
         "image-to-video"
       ],
-      "file": "image-to-video.ncraft",
+      "file": "templates/image-to-video/1/6f7ad921fa226909b27ba0aa31418280448f81df22c617242a861c99a5f6764c.ncraft",
       "id": "image-to-video",
       "title": "Animate an image",
       "version": 1
@@ -855,7 +856,7 @@
       "features": [
         "image-to-3d"
       ],
-      "file": "image-to-3d.ncraft",
+      "file": "templates/image-to-3d/1/0a60e2973415885e1e991f6ba058f826bfd27aca00158359067ad7e045fbb9f6.ncraft",
       "id": "image-to-3d",
       "title": "Build 3D from an image",
       "version": 1
@@ -867,7 +868,7 @@
       "features": [
         "transcribe-audio"
       ],
-      "file": "transcribe-audio.ncraft",
+      "file": "templates/transcribe-audio/1/850a252c2c189c54fa0b7b60c9abc8a1522d26ad02b1e7bfb2411f87fcefb8ab.ncraft",
       "id": "transcribe-audio",
       "title": "Transcribe a recording",
       "version": 1
@@ -880,11 +881,10 @@
         "generation-sheet",
         "variations"
       ],
-      "file": "generation-sheet.ncraft",
+      "file": "templates/generation-sheet/1/74b44b209e531fb3f96ac788679831f38a3e9cc3b6db3aeedec2a8b110a58207.ncraft",
       "id": "generation-sheet",
       "title": "Generate in a sheet",
       "version": 1
     }
-  ],
-  "version": 1
+  ]
 }
