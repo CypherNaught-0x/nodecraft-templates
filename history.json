@@ -885,6 +885,20 @@
       "id": "generation-sheet",
       "title": "Generate in a sheet",
       "version": 1
+    },
+    {
+      "id": "action-image-rasterize",
+      "title": "Rasterize an SVG",
+      "description": "An original SVG feeds Rasterize SVG. Run all to create a 512-pixel PNG for raster-only models or tools; change Longest edge to choose its size. The vector source stays unchanged. No provider, key or native GPU is needed.",
+      "version": 1,
+      "file": "templates/action-image-rasterize/1/976d22e12fca16a03c886a59df951c445a7de698ee8bd0e89329fb73d06dab5b.ncraft",
+      "blake3": "976d22e12fca16a03c886a59df951c445a7de698ee8bd0e89329fb73d06dab5b",
+      "features": [
+        "image.rasterize",
+        "svg",
+        "vector-to-raster"
+      ],
+      "canvas": "4df55a24-876e-117a-dc8e-1b70b564b9d0"
     }
   ]
 }

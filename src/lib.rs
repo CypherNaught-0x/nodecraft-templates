@@ -435,6 +435,12 @@ pub const FILES: &[(&str, &[u8])] = &[
             "../templates/generation-sheet/1/74b44b209e531fb3f96ac788679831f38a3e9cc3b6db3aeedec2a8b110a58207.ncraft"
         ),
     ),
+    (
+        "templates/action-image-rasterize/1/976d22e12fca16a03c886a59df951c445a7de698ee8bd0e89329fb73d06dab5b.ncraft",
+        include_bytes!(
+            "../templates/action-image-rasterize/1/976d22e12fca16a03c886a59df951c445a7de698ee8bd0e89329fb73d06dab5b.ncraft"
+        ),
+    ),
 ];
 
 /// Original fixture used by NodeCraft’s offline author/validation tests.

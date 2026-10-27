@@ -19,3 +19,10 @@ PNG examples are authored by `Graph::image` in the Rust template author: opaque 
 asymmetric colored L and a separate square. Their decoded pixels, transformations and keyed alpha
 are tested. PDF content is authored there too. The GLB triangle and WAV reuse NodeCraft's original
 test fixtures. These assets use the repository's license; no external media or workflow is copied.
+
+`geometric-vector.svg` is original NodeCraft material: a 200×100 purple rectangle with an
+asymmetric mint circle. The SVG-to-PNG starter embeds these exact source bytes, preserving
+them while the explicit Rasterize SVG node creates a PNG. Its Rust author and real conversion
+proof live in NodeCraft's `crates/engine/tests/svg_template35.rs`; the proof checks the
+512×256 PNG's actual decoded background/circle pixels and immutable SVG source. No font,
+external resource, vendor output or provider call is needed.
