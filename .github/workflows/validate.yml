@@ -1,0 +1,62 @@
+name: Validate templates
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+env:
+  CARGO_INCREMENTAL: 0
+  CARGO_TERM_COLOR: always
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+      - name: Read immutable client validator revision
+        shell: bash
+        run: |
+          set -eu
+          IFS= read -r revision < .nodecraft-validator
+          [[ "$revision" =~ ^[0-9a-f]{40}$ ]]
+          printf 'VALIDATOR_REV=%s\n' "$revision" >> "$GITHUB_ENV"
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: CypherNaught-0x/nodecraft
+          ref: ${{ env.VALIDATOR_REV }}
+          path: client-validator
+      - name: Record exact validator source
+        working-directory: client-validator
+        shell: bash
+        run: |
+          set -eu
+          test "$(git rev-parse HEAD)" = "$VALIDATOR_REV"
+          git show -s --format='%H %s' HEAD
+      - name: Rust toolchain
+        run: rustup toolchain install 1.95.0 --profile minimal --component rustfmt
+      - name: Static offline package agreement
+        run: |
+          cargo +1.95.0 fmt --check
+          cargo +1.95.0 test
+      - name: Previous complete published ledger
+        shell: bash
+        env:
+          BASE_REV: ${{ github.event.pull_request.base.sha || github.event.before }}
+        run: |
+          set -eu
+          if [ -n "$BASE_REV" ] && git cat-file -e "$BASE_REV:history.json" 2>/dev/null; then
+            git show "$BASE_REV:history.json" > "$RUNNER_TEMP/templates-base-history.json"
+            printf 'TEMPLATE953_BASE_HISTORY=%s\n' "$RUNNER_TEMP/templates-base-history.json" >> "$GITHUB_ENV"
+          elif [ -n "$BASE_REV" ] && git cat-file -e "$BASE_REV:index.json" 2>/dev/null; then
+            echo 'A published catalog must have its complete immutable history ledger.' >&2
+            exit 1
+          fi
+      - name: Exact client schema, archive, digest and negative-proof validation
+        working-directory: client-validator
+        env:
+          TEMPLATE953_CATALOG_ROOT: ${{ github.workspace }}
+        run: cargo +1.95.0 test -p nodecraft-engine --test template_catalog -- --include-ignored

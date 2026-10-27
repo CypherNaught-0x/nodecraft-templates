@@ -18,6 +18,10 @@ No vendor workflows, prompts or media were copied.
 - `index.json`: the current catalog, with mandatory `schema_version: 1` and one current record
   per unique template ID. Each record has id, title, positive version, description, feature tags,
   initial canvas ID, BLAKE3 digest and immutable archive path.
+- `history.json`: the complete append-only published-version ledger, including versions no
+  longer current in the index. It uses the same bounded record contract (at most 1 MiB/1024
+  records). Every archive under `templates/` must be represented. Keep original ledger records;
+  CI compares the entire previous ledger and validates every historical archive and canvas ID.
 - `templates/<id>/<version>/<blake3>.ncraft`: directly openable projects. Published bytes and
   versions are immutable; keep old paths available when publishing a new version.
 - `src/lib.rs`: dependency-free static index/archive bytes, explicitly maintained with the index.
@@ -33,7 +37,8 @@ never reuse another template's IDs. Include all assets, no credentials, private 
 information. Describe what the example does and any configured-provider/native-resource needs.
 
 The client, author validation and CI use the **same NodeCraft production index/archive validator**.
-The pinned validator source revision is recorded in `.github/workflows/validate.yml`; validation
+The pinned validator source revision is recorded in `.nodecraft-validator`; the workflow checks
+out that exact source commit. Validation
 is not a second implementation of the schema. In a checkout of that exact NodeCraft revision:
 
 ```sh
@@ -52,11 +57,16 @@ the pinned offline snapshot.
 
 1. Branch and change an example; increment its positive version when its archive changes.
 2. Place the archive at its new immutable path; compute BLAKE3 from those exact archive bytes.
-   Update the index record, metadata and static byte table together. Do not remove older archives.
+   Append its record to `history.json` and update the current index/static byte table. Do not remove
+   or rewrite older ledger records or archives, even after several newer versions. New versions
+   need canvas IDs distinct from **every** historical archive, including published Technique
+   canvases. Current descriptions may be corrected without rewriting historical ledger metadata.
 3. Run the exact pinned validator and package checks above. Review the actual graph and media;
    use safe examples and add attribution for any permissible external contribution.
 4. Open a pull request. CI validates the complete current index and checks that published
-   `(id, version)` contents were not replaced. Merge only after checks/review pass.
+   `(id, version)` contents were not replaced or removed from any historical version; it also
+   rejects reuse of older canvas IDs. Merge only after checks/review pass. Use a merge commit to
+   preserve the migrated source history and immutable revisions pinned by NodeCraft.
 5. The default branch index publishes the update to clients; clients fetch it first and retrieve
    only a selected missing archive. An unreachable or invalid update leaves their bundled or
    previously verified version usable. No app release is required for catalog updates.
